@@ -10,10 +10,10 @@ app.use("/api/user", router);
 app.use("/api/blog", blogRouter);
 mongoose
   .connect(
-    "mongodb+srv://admin:ESjtvUtwLfVb8c2F@cluster0.tdimc.mongodb.net/Blog?retryWrites=true&w=majority"
+    "mongodb+srv://admin:LbenH1jDn9igKqZa@cluster0.0qizfif.mongodb.net/?retryWrites=true&w=majority"
   )
-  .then(() => app.listen(5000))
+  .then(() => app.listen(3000))
   .then(() =>
-    console.log("Connected TO Database and Listening TO Localhost 5000")
+    console.log("Connected TO Database and Listening TO Localhost 3000")
   )
   .catch((err) => console.log(err));
